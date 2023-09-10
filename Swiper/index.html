@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hotel Carousel and Review</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Hotel Carousel and Review</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hotel-card">
+            <div class="carousel">
+                <img src="hotel1.jpg" alt="Hotel Image 1">
+                <img src="hotel2.jpg" alt="Hotel Image 2">
+                <img src="hotel3.jpg" alt="Hotel Image 3">
+            </div>
+            <div class="carousel-buttons">
+                <button class="prev-button">Previous</button>
+                <button class="next-button">Next</button>
+            </div>
+        </div>
+        <div class="review-section">
+            <h2>Leave a Review</h2>
+            <form id="review-form">
+                <input type="tel" id="telephone" placeholder="Telephone Number" required>
+                <textarea id="review" placeholder="Your Review" required></textarea>
+                <select id="rating" required>
+                    <option value="" disabled selected>Select Rating</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
