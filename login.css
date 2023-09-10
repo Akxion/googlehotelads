@@ -1,4 +1,4 @@
-/* login.css */
+/* registration.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -8,13 +8,34 @@ body {
     color: #E9E6F3; /* Grey text color */
 }
 
+header {
+    /*background-color: #16102E; /* Navy header background */
+    color: white;
+    padding: 0px 0;
+    position: sticky; /* Set the position to sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 10000; /* Ensure it appears above other content */
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(22, 16, 46, 0.7); /* Transparent navy navigation background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .login {
-    background-color: rgba(22, 16, 46, 0.7); /* Transparent navy footer background */
+    background-color: rgba(22, 16, 46, 0.2); /* Transparent navy footer background */
     color: white;
     width: 300px;
     margin: 100px auto;
     padding: 30px;
-    background:rgba(255,255,255,0.2); /* Dark card background */
+    background:rgba(184, 249, 0, 0.7); /* Green color with 70% opacity */
     border-radius: 25px;
     box-shadow:inset  2px 4px rgba(255, 255, 255, 0.02);
     /*color: #E9E6F3;  Grey text color for cards */
@@ -39,7 +60,7 @@ input[type="password"] {
 }
 
 button {
-    background-color: #B8F900;
+    background-color:#16102E;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -49,6 +70,5 @@ button {
 }
 
 button:hover {
-    background-color: #16102E;
+    background-color: rgba(22, 16, 46, 0.5);
 }
- 
